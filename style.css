@@ -1,0 +1,193 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+
+main{
+    display: flex;
+    font-family: Verdana, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+.section-1{
+    background: url('./images/twitter-home-page.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 670px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.section-1 .icon-white{
+    color: white;
+    font-size: 15rem;
+}
+
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem;
+    padding-bottom: 3.5rem;
+
+}
+
+.icon-blue{
+    font-size: 2.65rem;
+    color: rgba(29, 161, 242, 1);
+    margin-bottom: 0.6rem;
+}
+
+
+
+.section-2 h1{
+     word-break: normal;
+    font-weight: bolder;
+    font-family: inherit;
+    font-size: 60px;
+    padding-top: 32px;
+    margin-top: 3.7rem;
+    margin-bottom: 3.5rem;
+}
+
+.section-2 h4{
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 33px;
+    margin-bottom: 1rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up,
+.log-in{
+    color: rgba(29, 161, 242, 1);
+    padding: 0.7rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 50px;
+    border: 1px solid rgba(29, 161, 242, 1);
+    width: 350px;
+    transition: all 0.1s linear;
+
+}
+
+
+.sign-up{
+    background-color: rgba(29, 161, 242, 1);
+    color: white;
+}
+.sign-up:hover,
+.log-in:hover {
+  text-decoration: none;
+}
+.sign-up:hover {
+  color: white;
+  background-color: rgba(30, 142, 212, 0.952);
+}
+.log-in:hover {
+  color: rgba(29, 161, 242, 1);
+  background-color: rgba(29, 160, 242, 0.096);
+}
+
+footer{
+    padding: 0.8rem 1.5rem;
+}
+
+.footer-links{
+    text-align: center;
+}
+
+.footer-links a,
+.footer-links p{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.85rem;
+    padding-right: 0.6rem;
+    color: rgb(91, 112, 131);
+    letter-spacing: 0.5px;
+}
+
+.footer-links p{
+    margin-top: 0.5rem;
+}
+
+
+@media screen  and (max-width:1000px){
+ 
+ main{
+     flex-direction: column-reverse;
+ }
+
+ .section-1{
+     max-width: 1000px;
+ }
+ .section-1 .icon-white{
+    font-size: 7em;
+    padding: 1.7rem;
+}
+
+.section-2{
+    padding: 30px;
+margin: 0 auto;
+}
+
+.section-2 h1{
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+
+}
+.buttons .sign-up,
+.buttons .log-in{
+    width: 200px;
+    margin: 10px;
+}
+}
+
+@media screen and (max-width:500px) {
+    .section-1{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .section-2 h1{
+      font-size: 40px;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .section-2 h4{
+      font-size: 25px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        width: 388px; 
+        padding: 10px;
+     }
+
+    .buttons .sign-up,
+    .buttons .log-in{
+        width: 370px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }   
+}
